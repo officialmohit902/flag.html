@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Flag with Bloody Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 30%, #8b0000 0%, #4b0000 50%, #000000 100%);
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/blood.png') repeat;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .flag {
+      width: 450px;
+      height: 300px;
+      border: 2px solid black;
+      box-shadow: 0 0 30px rgba(139, 0, 0, 0.7);
+      z-index: 1;
+      position: relative;
+    }
+
+    .stripe {
+      height: 33.33%;
+      width: 100%;
+    }
+
+    .saffron {
+      background-color: #FF9933;
+    }
+
+    .white {
+      background-color: white;
+      position: relative;
+    }
+
+    .green {
+      background-color: #138808;
+    }
+
+    .chakra {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      border: 3px solid #000080;
+      border-radius: 50%;
+    }
+
+    .chakra-line {
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      background-color: #000080;
+      top: 0;
+      left: 50%;
+      transform-origin: bottom center;
+    }
+
+    /* Chakra spokes */
+    .chakra-line:nth-child(n) {
+      transform: rotate(calc(15deg * (var(--i) - 1)));
+    }
+
+    /* Individual spokes (1 to 24) */
+    .chakra-line:nth-child(1)  { --i: 1; }
+    .chakra-line:nth-child(2)  { --i: 2; }
+    .chakra-line:nth-child(3)  { --i: 3; }
+    .chakra-line:nth-child(4)  { --i: 4; }
+    .chakra-line:nth-child(5)  { --i: 5; }
+    .chakra-line:nth-child(6)  { --i: 6; }
+    .chakra-line:nth-child(7)  { --i: 7; }
+    .chakra-line:nth-child(8)  { --i: 8; }
+    .chakra-line:nth-child(9)  { --i: 9; }
+    .chakra-line:nth-child(10) { --i: 10; }
+    .chakra-line:nth-child(11) { --i: 11; }
+    .chakra-line:nth-child(12) { --i: 12; }
+    .chakra-line:nth-child(13) { --i: 13; }
+    .chakra-line:nth-child(14) { --i: 14; }
+    .chakra-line:nth-child(15) { --i: 15; }
+    .chakra-line:nth-child(16) { --i: 16; }
+    .chakra-line:nth-child(17) { --i: 17; }
+    .chakra-line:nth-child(18) { --i: 18; }
+    .chakra-line:nth-child(19) { --i: 19; }
+    .chakra-line:nth-child(20) { --i: 20; }
+    .chakra-line:nth-child(21) { --i: 21; }
+    .chakra-line:nth-child(22) { --i: 22; }
+    .chakra-line:nth-child(23) { --i: 23; }
+    .chakra-line:nth-child(24) { --i: 24; }
+  </style>
+</head>
+<body>
+
+<div class="flag">
+  <div class="stripe saffron"></div>
+  <div class="stripe white">
+    <div class="chakra">
+      <!-- 24 spokes -->
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+      <div class="chakra-line"></div>
+    </div>
+  </div>
+  <div class="stripe green"></div>
+</div>
+
+</body>
+</html>
